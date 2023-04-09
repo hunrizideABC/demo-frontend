@@ -8,10 +8,25 @@ class DeveloperService {
     return axios.get(`${INSTRUCTOR_API_URL}/findAll`);
   }
 
-  // retrieveCourse(name, id) {
-  //   //console.log('executed service')
-  //   return axios.get(`${INSTRUCTOR_API_URL}/courses/${id}`);
-  // }
+  retrieveDeveloper(id) {
+    //console.log('executed service')
+    return axios.get(`${INSTRUCTOR_API_URL}/getDevelper/${id}`);
+  }
+
+  deleteDeveloper(id) {
+    //console.log('executed service')
+    return axios.get(`${INSTRUCTOR_API_URL}/deleteDevelper/${id}`);
+  }
+
+  updateDeveloper(developer) {
+    //console.log('executed service')
+    return axios.post(`${INSTRUCTOR_API_URL}/update`, developer);
+  }
+
+  createDeveloper(developer) {
+    //console.log('executed service')
+    return axios.post(`${INSTRUCTOR_API_URL}/insert`, developer);
+  }
 
 }
 
