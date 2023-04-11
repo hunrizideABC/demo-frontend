@@ -10,12 +10,12 @@ class DeveloperService {
 
   retrieveDeveloper(id) {
     //console.log('executed service')
-    return axios.get(`${INSTRUCTOR_API_URL}/getDevelper/${id}`);
+    return axios.get(`${INSTRUCTOR_API_URL}/getDeveloper/${id}`);
   }
 
   deleteDeveloper(id) {
     //console.log('executed service')
-    return axios.get(`${INSTRUCTOR_API_URL}/deleteDevelper/${id}`);
+    return axios.get(`${INSTRUCTOR_API_URL}/deleteDeveloper/${id}`);
   }
 
   updateDeveloper(developer) {
